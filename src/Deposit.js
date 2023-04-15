@@ -1,19 +1,23 @@
 import { faMailBulk, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Postdeposit } from "./Api/Api";
+import axios from "axios";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Deposit = () => {
   const [deposit, setDeposit] = useState("");
 
-  const depositdata = { deposit };
+  // const depositdata = { deposit };
+  const Navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (deposit < 100) {
       alert("Deposit amount should be at least $100.");
     } else {
-      Postdeposit(depositdata);
+      Postdeposit(deposit);
+      Navigate("/banking");
     }
   };
 
