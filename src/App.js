@@ -16,11 +16,20 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/userregister" element={<Userregister />} />
         <Route path="/userlogin" element={<Userlogin />} />
-        <Route path="/banking" element={<BankingStatement />} />
-        <Route path="/deposit" element={<Deposit />} />
+        <Route
+          path="/banking"
+          element={<ProtectedRoute component={<BankingStatement />} />}
+        />
+        <Route
+          path="/deposit"
+          element={<ProtectedRoute component={<Deposit />} />}
+        />
       </Routes>
     </div>
   );
 }
 
+const ProtectedRoute = ({ component }) => {
+  return localStorage.getItem("id") ? component : <Userlogin />;
+};
 export default App;
