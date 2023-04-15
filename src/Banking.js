@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function BankingStatement() {
   const [userId, setUserId] = useState("");
-  const [balance, setBalance] = useState(1000);
+  const [balance, setBalance] = useState("");
   const [withdrawAmount, setWithdrawAmount] = useState("");
 
   const handleChangeUser = (event) => {
@@ -44,7 +44,7 @@ function BankingStatement() {
               </h3>
             </div>
             <h5>
-              <p>Current balance: ${balance}</p>
+              <p>Please withdraw less than 90% of your available balance</p>
             </h5>
             <div className="card-body">
               <form onSubmit={handleSubmit}>
@@ -84,7 +84,7 @@ function BankingStatement() {
                     aria-label="Login"
                     className="btn float-right  btn-dark mt-2 px-4"
                   >
-                    Submit
+                    Withdraw
                   </button>
                 </div>
               </form>
