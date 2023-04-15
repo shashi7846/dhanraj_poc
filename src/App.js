@@ -30,6 +30,6 @@ function App() {
 }
 
 const ProtectedRoute = ({ component }) => {
-  return localStorage.getItem("id") ? component : <Userlogin />;
+  return window.localStorage.getItem("app_token") ? component : <Userlogin />;
 };
 export default App;
