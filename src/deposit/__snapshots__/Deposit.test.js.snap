@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Deposit page Matching the snapshot of the Deposit 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="container mt-5 h-100"
+    >
+      <div
+        class="d-flex justify-content-center h-100"
+      >
+        <div
+          class="card col-5"
+        >
+          <div
+            class="card-header Cardtop "
+            style="background-color: black;"
+          >
+            <h3
+              class="login-name text-light"
+            >
+              <b>
+                Deposit Amount
+              </b>
+            </h3>
+          </div>
+          <div
+            class="card-body"
+          >
+            <form>
+              <div
+                class="input-group form-group"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white"
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-money-bill fa-beat-fade"
+                      data-icon="money-bill"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                      for="EmailId"
+                    >
+                      <b>
+                        Deposit
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  aria-label="number"
+                  class="form-control ms-2"
+                  name="number"
+                  placeholder="Deposit amount"
+                  required=""
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <button
+                  aria-label="Deposit"
+                  class="btn float-right  btn-dark mt-2 px-4"
+                  name="Deposit"
+                  type="submit"
+                  value="Deposit"
+                >
+                  Deposit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Home page Matching the snapshot of the navbar 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="container mt-5 h-100"
+    >
+      <div
+        class="d-flex justify-content-center h-100"
+      >
+        <div
+          class="card col-5"
+        >
+          <div
+            class="card-header Cardtop "
+            style="background-color: black;"
+          >
+            <h3
+              class="login-name text-light"
+            >
+              <b>
+                Deposit Amount
+              </b>
+            </h3>
+          </div>
+          <div
+            class="card-body"
+          >
+            <form>
+              <div
+                class="input-group form-group"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white"
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-money-bill fa-beat-fade"
+                      data-icon="money-bill"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                      for="EmailId"
+                    >
+                      <b>
+                        Deposit
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  aria-label="number"
+                  class="form-control ms-2"
+                  name="number"
+                  placeholder="Deposit amount"
+                  required=""
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <button
+                  aria-label="Deposit"
+                  class="btn float-right  btn-dark mt-2 px-4"
+                  name="Deposit"
+                  type="submit"
+                  value="Deposit"
+                >
+                  Deposit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

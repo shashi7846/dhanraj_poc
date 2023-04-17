@@ -8,7 +8,7 @@ describe("Home page", () => {
     render(renderComponent(<Home />));
     const text1 = screen.getAllByText(/Welcome to D-Bank/i);
   });
-  test("Matching the snapshot of the navbar", async () => {
+  test("Matching the snapshot of the Home", async () => {
     const { asFragment } = render(renderComponent(<Home />));
     expect(asFragment()).toMatchSnapshot();
   });

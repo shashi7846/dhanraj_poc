@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Register page Matching the snapshot of the Register 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="container mt-5 h-100"
+    >
+      <div
+        class="d-flex justify-content-center h-100"
+      >
+        <div
+          class="card col-5"
+        >
+          <div
+            class="card-header Cardtop "
+            style="background-color: black;"
+          >
+            <h3
+              class="login-name text-light"
+            >
+              <b>
+                Register
+              </b>
+            </h3>
+          </div>
+          <div
+            class="card-body"
+          >
+            <form>
+              <div
+                class="input-group form-group"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white"
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-user fa-beat-fade"
+                      data-icon="user"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                    >
+                      <b>
+                        UserName
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  class="form-control ms-2"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="input-group form-group mt-3"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white"
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-envelopes-bulk fa-beat-fade"
+                      data-icon="envelopes-bulk"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                      for="EmailId"
+                    >
+                      <b>
+                        Email Id
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  aria-label="email"
+                  class="form-control ms-2"
+                  name="email"
+                  placeholder="email"
+                  required=""
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                class="input-group form-group mt-3"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white "
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-key fa-beat-fade"
+                      data-icon="key"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                    >
+                      <b>
+                        Password
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  aria-label="password"
+                  class="form-control ms-2"
+                  name="password"
+                  placeholder="password"
+                  required=""
+                  type="password"
+                  value=""
+                />
+              </div>
+              <div
+                class="input-group form-group mt-3"
+              >
+                <div
+                  class="input-group-prepend"
+                >
+                  <span
+                    class="input-group-text text-white "
+                    style="min-width: 150px;"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-key fa-beat-fade"
+                      data-icon="key"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      style="font-size: 1.75em; color: black;"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <label
+                      class="text-dark ms-2"
+                    >
+                      <b>
+                        Confirm
+                      </b>
+                    </label>
+                  </span>
+                </div>
+                <input
+                  aria-label="confirmpassword"
+                  class="form-control ms-2"
+                  name="confirmpassword"
+                  placeholder="confirmpassword"
+                  required=""
+                  type="confirmpassword"
+                  value=""
+                />
+              </div>
+              <div
+                class="form-group"
+              >
+                <button
+                  aria-label="Register"
+                  class="btn float-right  btn-dark mt-2 px-4"
+                  name="Register"
+                  type="submit"
+                  value="Register"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="card-footer"
+            style="background-color: black;"
+          >
+            <div
+              class="d-flex justify-content-center links text-light"
+            >
+              Already have an account?
+              <a
+                href="/userlogin"
+              >
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

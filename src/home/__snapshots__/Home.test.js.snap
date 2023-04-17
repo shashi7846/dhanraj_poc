@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Home page Matching the snapshot of the Home 1`] = `
+<DocumentFragment>
+  <h1
+    class="text-light"
+    style="margin: 200px;"
+  >
+    <b>
+      Welcome to D-Bank
+    </b>
+    <br />
+  </h1>
+</DocumentFragment>
+`;
+
 exports[`Home page Matching the snapshot of the navbar 1`] = `
 <DocumentFragment>
   <h1

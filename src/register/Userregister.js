@@ -169,9 +169,9 @@ const Userregister = () => {
                 <div className="form-group">
                   <button
                     type="submit"
-                    value="Login"
-                    name="Login"
-                    aria-label="Login"
+                    value="Register"
+                    name="Register"
+                    aria-label="Register"
                     className="btn float-right  btn-dark mt-2 px-4"
                   >
                     Register
