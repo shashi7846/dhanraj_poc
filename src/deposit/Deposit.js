@@ -1,9 +1,9 @@
-import { faMailBulk, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
+import { faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
-import { Postdeposit } from "./Api/Api";
-import axios from "axios";
-import { Navigate, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
+import { Postdeposit } from "../Api/Api";
 
 const Deposit = () => {
   const [deposit, setDeposit] = useState("");

@@ -15,20 +15,8 @@ body {
   height: 70vh;
 }
 .navbar {
-  /* background: #200122; 
-  background: -webkit-linear-gradient(
-    to right,
-    #200122,
-    #6f0000
-  ); 
-  background: linear-gradient(to right, #200122, #6f0000); */
-
-  background: #3a6186; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3a6186,
-    #89253e
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #3a6186;
+  background: -webkit-linear-gradient(to right, #3a6186, #89253e);
   background: linear-gradient(to right, #3a6186, #89253e);
 }
 .App-logo {

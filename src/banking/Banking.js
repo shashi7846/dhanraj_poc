@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey, faUnlock } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 function BankingStatement() {
   const [userId, setUserId] = useState("");

@@ -1,12 +1,12 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 //import Login from "./Login";
-import Userlogin from "./Userlogin";
-import Userregister from "./Userregister";
-import Home from "./Home";
-import Navbar from "./Navbar";
-import BankingStatement from "./Banking";
-import Deposit from "./Deposit";
+import Userlogin from "./login/Userlogin";
+import Home from "./home/Home";
+import Navbar from "./navbar/Navbar";
+import BankingStatement from "./banking/Banking";
+import Deposit from "./deposit/Deposit";
+import Userregister from "./register/Userregister";
 
 function App() {
   return (
