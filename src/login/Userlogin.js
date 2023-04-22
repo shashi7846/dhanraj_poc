@@ -39,6 +39,8 @@ const Userlogin = () => {
                     if (token) {
                       const users = await GetuserbyEmail(email);
                       console.log(users.data._id);
+                      window.localStorage.setItem("_id",users.data._id)
+                      window.localStorage.setItem("email",users.data.email)
                       Navigate("/deposit");
                     } else {
                       alert("Email or password is incorrect");

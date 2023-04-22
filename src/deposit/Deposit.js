@@ -16,10 +16,12 @@ const Deposit = () => {
     if (deposit < 100) {
       alert("Deposit amount should be at least $100.");
     } else {
-      Postdeposit(deposit);
+      Postdeposit({deposit:parseInt(deposit),email:window.localStorage.getItem("email")});
+      console.log(window.localStorage.getItem("email"))
       Navigate("/banking");
     }
   };
+
 
   return (
     <div>
