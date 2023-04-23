@@ -19,18 +19,28 @@ function BankingStatement() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const amount = parseFloat(withdrawAmount);
-    if (amount > balance) {
-      alert("Insufficient funds");
-    } else if (balance - amount < 100) {
-      alert("You must keep at least $100 in your account");
-    } else {
+    // if (amount > balance) {
+    //   alert("Insufficient funds");
+    // } else if (balance - amount < 100) {
+    //   alert("You must keep at least $100 in your account");
+    // } else {
       //postwithdraw(Number(withdrawAmount));
+      try{
       postwithdraw({
         withdraw: Number(withdrawAmount),
         email: window.localStorage.getItem("email"),
-      });
-      setWithdrawAmount("");
+      }).then((data)=>{
+        alert(data.data.message)
+      }).catch(e=>alert(e?.response?.data?.error))
+    
+      
+      }catch(error){
+        console.log(error)
+        
+      
+      
     }
+    setWithdrawAmount("");
   };
 
   return (
@@ -73,8 +83,8 @@ function BankingStatement() {
                     aria-label="number"
                     className="form-control ms-2"
                     placeholder="Withdraw Amount"
-                    value={userId}
-                    onChange={handleChangeUser}
+                    value={withdrawAmount}
+                    onChange={handleChangeWithdraw}
                     required
                   />
                 </div>
