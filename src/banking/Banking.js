@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey, faUnlock } from "@fortawesome/free-solid-svg-icons";
-import { postwithdraw } from "../Api/Api";
+import { Getdeposit, postwithdraw } from "../Api/Api";
 
 function BankingStatement() {
   const [userId, setUserId] = useState("");
@@ -24,27 +24,32 @@ function BankingStatement() {
     // } else if (balance - amount < 100) {
     //   alert("You must keep at least $100 in your account");
     // } else {
-      //postwithdraw(Number(withdrawAmount));
-      try{
+    //postwithdraw(Number(withdrawAmount));
+    try {
       postwithdraw({
         withdraw: Number(withdrawAmount),
         email: window.localStorage.getItem("email"),
-      }).then((data)=>{
-        alert(data.data.message)
-      }).catch(e=>alert(e?.response?.data?.error))
-    
-      
-      }catch(error){
-        console.log(error)
-        
-      
-      
+      })
+        .then((data) => {
+          alert(data.data.message);
+        })
+        .catch((e) => alert(e?.response?.data?.error));
+    } catch (error) {
+      console.log(error);
     }
     setWithdrawAmount("");
   };
-
+  useEffect(() => {
+    Getdeposit().then((data) => {
+      console.log(data);
+      setBalance(data.data.user.balance);
+    });
+  }, []);
   return (
     <>
+      <label>
+        <h3 style={{ color: "white" }}>balance:{balance}</h3>
+      </label>
       <div className="container mt-5 h-100">
         <div className="d-flex justify-content-center h-100">
           <div className="card col-5">
