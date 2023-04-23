@@ -11,7 +11,18 @@ export function GetuserbyEmail(id) {
   return axios.get(`http://localhost:5000/user/${id}`);
 }
 
-export function Postdeposit(app_token, data) {
+export function Postdeposit(data) {
   // posting deposit details with particular id
-  return axios.post(`http://localhost:5000/deposit/${app_token}`, data);
+  return axios.post(
+    `http://localhost:5000/deposit/${window.localStorage.getItem("_id")}`,
+    data
+  );
+}
+
+export function postwithdraw(data) {
+  // posting deposit details with particular id
+  return axios.post(
+    `http://localhost:5000/withdraw/${window.localStorage.getItem("_id")}`,
+    data
+  );
 }
