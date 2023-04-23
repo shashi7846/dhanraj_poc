@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faKey, faUnlock } from "@fortawesome/free-solid-svg-icons";
+import { postwithdraw } from "../Api/Api";
 
 function BankingStatement() {
   const [userId, setUserId] = useState("");
@@ -23,7 +24,11 @@ function BankingStatement() {
     } else if (balance - amount < 100) {
       alert("You must keep at least $100 in your account");
     } else {
-      //postwithdraw();
+      //postwithdraw(Number(withdrawAmount));
+      postwithdraw({
+        withdraw: Number(withdrawAmount),
+        email: window.localStorage.getItem("email"),
+      });
       setWithdrawAmount("");
     }
   };
