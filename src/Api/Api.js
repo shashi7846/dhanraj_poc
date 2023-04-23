@@ -19,6 +19,14 @@ export function Postdeposit(data) {
   );
 }
 
+export function Getdeposit(data) {
+  // posting deposit details with particular id
+  return axios.get(
+    `http://localhost:5000/${window.localStorage.getItem("email")}`,
+    data
+  );
+}
+
 export function postwithdraw(data) {
   // posting deposit details with particular id
   return axios.post(

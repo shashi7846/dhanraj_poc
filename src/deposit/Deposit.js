@@ -1,13 +1,14 @@
 import { faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Postdeposit } from "../Api/Api";
+import { Getdeposit, Postdeposit } from "../Api/Api";
 
 const Deposit = () => {
   const [deposit, setDeposit] = useState("");
 
+  const [balance, setBalance] = useState("");
   // const depositdata = { deposit };
   const Navigate = useNavigate();
 
@@ -16,15 +17,27 @@ const Deposit = () => {
     if (deposit < 100) {
       alert("Deposit amount should be at least $100.");
     } else {
-      Postdeposit({deposit:parseInt(deposit),email:window.localStorage.getItem("email")});
-      console.log(window.localStorage.getItem("email"))
+      Postdeposit({
+        deposit: parseInt(deposit),
+        email: window.localStorage.getItem("email"),
+      });
+      console.log(window.localStorage.getItem("email"));
       Navigate("/banking");
     }
   };
 
+  useEffect(() => {
+    Getdeposit().then((data) => {
+      console.log(data);
+      setBalance(data.data.user.balance);
+    });
+  }, []);
 
   return (
     <div>
+      <label>
+        <h3 style={{ color: "white" }}>balance:{balance}</h3>
+      </label>
       <div className="container mt-5 h-100">
         <div className="d-flex justify-content-center h-100">
           <div className="card col-5">
