@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Postdeposit } from "../Api/Api";
+import { Getdeposit, Postdeposit } from "../Api/Api";
 
 const Deposit = () => {
   const [deposit, setDeposit] = useState("");
@@ -16,12 +16,14 @@ const Deposit = () => {
     if (deposit < 100) {
       alert("Deposit amount should be at least $100.");
     } else {
-      Postdeposit({deposit:parseInt(deposit),email:window.localStorage.getItem("email")});
-      console.log(window.localStorage.getItem("email"))
+      Postdeposit({
+        deposit: parseInt(deposit),
+        email: window.localStorage.getItem("email"),
+      });
+      console.log(window.localStorage.getItem("email"));
       Navigate("/banking");
     }
   };
-
 
   return (
     <div>
